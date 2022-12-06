@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura&family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 20;
+  color: #ffffff;
+  min-height: 100vh;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: white
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Jura';
+}
+
+p {
+  margin: 2rem 0;
+  font-family: 'Montserrat';
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #1F221E;
+  background-color: #54E9BC;
+  border-radius: 40px 0px;
+  padding: 18px 54px;
+  border: none
+}
+
+header {
+  background-image: url("../images/09-night.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:60%
+}
+
+.header {
+  display: none;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.header__nav {
+  display: flex;
+  max-width: 30%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Jura';
+}
+
+.header__buttons {
+  display: flex;
+  max-width: 30%;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.header__buttons button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: 'Jura';
+}
+
+.header__buttons button a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: 'Jura';
+}
+
+.header__nav, .header__buttons button, .header__buttons button i {
+  font-size: 1rem;
+}
+
+.header__buttons button img {
+  width: 1rem
+}
+
+.header__buttons .header__booking__btn img {
+margin: 0.5rem
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  animation: blur 2s linear 3s forwards;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  opacity: 0;
+  animation: move-in 2s linear 4s 1 forwards;
+}
+
+.hero img {
+  max-width: 30%;
+  transform: scale(2.5) translateY(50%);
+  margin: auto;
+  animation: zoom-out 2s linear 3s 1 forwards;
+}
+
+.hero__heading {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 57px;
+}
+
+.hero__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 0 0.5rem
+}
+
+.hero__btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.hero__btns .btn {
+  margin-top: 2rem;
+}
+
+.main__start {
+  background-color: #24242E;
+}
+
+.cards {
+  display: none;
+  text-align: center;
+  background-color: #24242E;
+}
+
+.card {
+  background-color: #1f1f1f;
+  width: 380px;
+  height: 545px;
+  margin: 15% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  margin: auto;
+  margin-top: -93px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card__header {
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.card__text {
+  font-size: 1rem;
+  line-height: 18px;
+  margin: auto 2.5rem;
+}
+
+footer {
+  display: none;
+}
+
+/*BOOKING*/
+.booking {
+  background-image: url("../images/bg-space.png");
+}
+
+.header--small {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 3%;
+  background-color: #54E9BC;
+  color: #1f1f1f;
+}
+
+.header--small img {
+  width: 40px
+}
+
+.header__booking, .booking__cards {
+  background-image: none;
+  background-color: transparent;
+}
+.main__booking__img {
+  display: none;
+}
+.booking__hero__heading {
+  display: none;
+}
+
+.booking__hero__content {
+  opacity: 1;
+  animation: none;
+  padding: 0
+}
+
+.booking__hero__text {
+  max-width: 300px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form input {
+  width: 312px;
+  height: 69px;
+  border-radius: 20px 0px;
+  margin: 20px auto;
+  padding: 1rem;
+  font-family: 'Jura';
+  font-size: 24px;
+}
+
+form input[type="button"] {
+  background-color: #54E9BC;
+  width: 50%
+}
+
+.footer--small {
+  background-color: #1f1f1f;
+  color:#54E9BC;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  padding: 2rem 3rem;
+}
+
+.footer--small img {
+  transform: rotateY(180deg);
+}
+
+.booking__cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(2.5) translateY(50%)
+  }
+  100% {
+    transform: scale(0.5) translateY(0)
+  }
+}
+
+@keyframes move-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blur {
+  0% {
+    backdrop-filter: none
+  }
+  100% {
+    backdrop-filter: blur(5px);
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 700px) {
+  body {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  
+  header, main, footer {
+    grid-column: 1 / span 10;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px
+  }
+  
+  .header {
+    grid-column: span 10;
+    display: flex;
+    justify-content: space-around;
+  }
+  .hero {
+    grid-column: 3 / span 6;
+  }
+  .hero, .hero__content, .hero img {
+    animation: none;
+  }
+
+
+  .hero img {
+    display: none;
+  }
+
+  .hero__content {
+    opacity: 1;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .hero__btns .btn {
+    display: none;
+  }
+  .hero__btns .btn:first-child {
+    display: block;
+  }
+
+  .header__logo {
+    width: 170px
+  }
+
+  .cards {
+    grid-column: 2 / span 8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+
+
+  footer {
+    background-color: #1f1f1f;
+    grid-template-rows: 100px;
+  }
+
+  .footer__icons {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    align-items: center;
+    justify-content: center
+  }
+
+  .footer__icons i, .footer__nav a {
+    margin: 0.25rem;
+  }
+
+  .footer__nav {
+    grid-column: 3/8;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Jura';
+    font-size: 1rem;
+    justify-content: center;
+    
+  }
+
+
+
+  .footer__buttons {
+    grid-column: 8/11;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__buttons button {
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+  }
+
+  footer img {
+    width: 84px;
+    margin-bottom: 0.25rem
+  }
+
+  /*Booking*/
+  .header--small, .booking__hero__text, .footer--small {
+    display: none;
+  }
+
+  .header__booking {
+    min-height: 400px;
+    background-image: 
+      linear-gradient(180.28deg, #24242E 11.76%, rgba(36, 36, 46, 0) 89.34%), 
+      url(../images/bg-book.jpg);
+    align-items: flex-start;
+  }
+
+  .booking__hero {
+    grid-column: 2 / span 4;
+    grid-row: 1;
+    margin: 0;
+      min-height: 70vh;
+  }
+
+  .booking__hero__content {
+    align-items: flex-start;
+  }
+
+  .booking__hero__heading {
+    display: block;
+    font-size: 96px;
+    padding-bottom: 1rem;
+  }
+
+  form {
+    max-width: 595px;
+  }
+
+  form input:not([type="button"]) {
+    border-radius: 0 ;
+  }
+
+  input:nth-child(3), input:nth-child(4) {
+    max-width: 100px;
+  }
+
+  form input {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    height: 78px;
+    width: 219px;
+    margin: 20px 10px
+  }
+
+  input::placeholder  {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+    form input[type="button"] {
+      margin: auto
+    }
+  .booking__cards {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  
+  .header {
+    grid-column: 2/span 8;
+  }
+
+  .header__nav, .header__buttons button, .header__buttons button i {
+    font-size: 1.25rem;
+  }
+  
+  .header__buttons button img {
+    width: 1.25rem
+  }
+  footer {
+    grid-template-rows: 200px;
+  }
+
+  .footer__icons {
+    grid-column: 2;
+  }
+
+  .footer__icons i {
+    margin: 0.5rem;
+    font-size: 32px;
+  }
+  .footer__nav {
+    grid-column: 3/7;
+    font-size: 20px;
+  }
+
+  .footer__nav a {
+    margin: 1rem
+  }
+  
+  .footer__buttons button {
+    font-size: 20px;
+  }
+
+  .footer__buttons {
+    grid-column: 8/10;
+  }
+
+  /*Booking*/
+  .main__booking__img {
+    display: block;
+    width: 320px;
+    height: 320px;
+    grid-column: 6 / span 4;
+    margin: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: translateY(-70%);
+  }
+
+
+}
