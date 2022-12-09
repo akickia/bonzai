@@ -8,61 +8,75 @@
   <script src="https://kit.fontawesome.com/1aafbbb739.js" crossorigin="anonymous"></script>
   <title>Bonz.ai</title>
 </head>
+
 <body>
-  <header>
+  <!-- **HEADER** -->
+  <!-- Header for desktop -->
+  <header class="header--start">
     <article class="header">
-      <img class="header__logo" src="images/bonz.ai-logo-color-landscape.png">
+      <img class="header__logo" src="images/bonz.ai-logo-color-landscape.png" alt="Bonz.ai logo">
       <nav class="header__nav">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="#">Contact</a>
-        <a href="#">About</a>
+        <a href="pages/about.html">About us</a>
       </nav>
-      <section class="header__buttons">
-        <button class="header__booking__btn"><a href="pages/booking.html"><img src="images/scroll.png">Booking</a></button>
-        <button class="header__search"><img src="images/Vector.png"> </button>
-        <button class="header__login"><i class="far fa-user"></i></button>
+      <section class="header__nav">
+        <a href="pages/booking.html" class="align"><img src="images/scroll.png">Booking</a>
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="far fa-user"></i></a>
       </section>
     </article>
-    <article class="hero">
-      <img src="images/bonz.ai-logo-color-portrait.png">
+
+  <!-- Special startpage for mobile -->
+    <article class="hero hero--start">
+      <img src="images/bonz.ai-logo-color-portrait.png" alt="Bonz.ai logo">
       <section class="hero__content">
         <h1 class="hero__heading">Welcome!</h1>
         <p class="hero__text">Lorem ipsum dolor sit amet, consectetur 
           adipiscing elit. Feugiat est diam ornare dui massa adipiscing 
           habitant. Feugiat condimentum in amet, amet.  </p>
         <section class="hero__btns">
-          <button class="hero__btn btn">Book your stay</button>
-          <button class="hero__btn btn">Contact us</button>
-          <button class="hero__btn btn">Log in</button>
+          <button class="btn"><a href="pages/booking.html">Book your stay</a></button>
+          <button class="btn">Contact us</button>
+          <button class="btn">Log in</button>
         </section>
       </section>
     </article>
   </header>
-  <main class="main__start">
-    <article class="cards">
-      <section class="card card__rooms">
-        <img class="card__img card__rooms__img"  src="images/02-night.jpg">
-        <h3 class="card__header">Our rooms</h3>
+
+  <!-- **MAIN** -->
+  <main class="main--start">
+  <!-- Cards section -->
+    <article class="cards--start cards">
+      <section class="card">
+        <img class="card__img"  src="images/02-night.jpg" alt="fireplace at night">
+        <h3 class="card__heading">Our rooms</h3>
         <p class="card__text">Lorem ipsum dolor sit amet, consectetur 
           adipiscing elit. Sollicitudin ultrices ac id dictum porta 
           mauris.</p>
+        <button class="btn"><a href="pages/about.html#rooms">Go to</a></button>
       </section>
-      <section class="card card__facilities">
-        <img class="card__img card__facilities__img" src="images/spa.jpg">
-        <h3 class="card__header">Our facilities</h3>
+      <section class="card">
+        <img class="card__img" src="images/spa.jpg" alt="view at the evening">
+        <h3 class="card__heading">Our facilities</h3>
         <p class="card__text">Lorem ipsum dolor sit amet, consectetur 
           adipiscing elit. Sollicitudin ultrices ac id dictum porta 
           mauris.</p>
+        <button class="btn"><a href="pages/about.html#facilities">Go to</a></button>
       </section>
-      <section class="card card__contact">
-        <img class="card__img card__contact__img" src="images/drone.jpg">
-        <h3 class="card__header">Contact us</h3>
+      <section class="card">
+        <img class="card__img" src="images/drone.jpg">
+        <h3 class="card__heading">Contact us</h3>
         <p class="card__text">Lorem ipsum dolor sit amet, consectetur 
           adipiscing elit. Sollicitudin ultrices ac id dictum porta 
           mauris.</p>
+        <button class="btn"><a href="#">Contact</a></button>
       </section>
     </article>
   </main>
+
+  <!-- **FOOTER** -->
+  <!-- Footer for desktop -->
   <footer>
     <section class="footer__icons">
       <i class="fab fa-spotify"></i>
@@ -73,13 +87,13 @@
       <a href="#">Sign in</a> 
       <a href="#">Help</a> 
       <a href="#">Available jobs</a> 
-      <a href="#">About</a> 
+      <a href="pages/about.html">About</a> 
       <a href="#">Terms & conditions</a> 
       <a href="#">Partners</a> 
     </nav>
     <section class="footer__buttons">
-      <img src="images/bonz.ai-logo-white-landscape.png">
-      <button class="footer__booking btn">Book your stay</button>
+      <img src="images/bonz.ai-logo-white-landscape.png" alt="Bonz.ai logo">
+      <button class="footer__booking btn"><a href="pages/booking.html">Book your stay</a></button>
     </section>
   </footer>
 </body>

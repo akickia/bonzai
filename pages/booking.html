@@ -8,70 +8,97 @@
   <script src="https://kit.fontawesome.com/1aafbbb739.js" crossorigin="anonymous"></script>
   <title>Bonz.ai - booking</title>
 </head>
+
 <body class="booking">
-  <header class="header__booking">
+  <!-- **HEADER** -->
+  <header class="header--booking">
+  <!-- Header for mobile -->
     <article class="header--small">
-      <img src="../images/bonz.ai-logo-black-symbol.png">
+      <nav class="header__nav--small">
+        <img src="../images/bonz.ai-logo-black-symbol.png">
+        <a href="../index.html">Home</a>
+        <a href="booking.html">Book your Stay</a>
+        <a href="about.html">About us</a>
+        <a href="#">Contact us</a>
+      </nav>
       <h2>Book your Stay</h2>
-      <section></section>
+      <i class="fa-solid fa-circle-info"></i>
     </article>
+  <!-- Header for desktop -->
     <article class="header">
-      <img class="header__logo" src="../images/bonz.ai-logo-color-landscape.png">
+      <img class="header__logo" src="../images/bonz.ai-logo-color-landscape.png" alt="Bonz.ai logo">
       <nav class="header__nav">
         <a href="../index.html">Home</a>
         <a href="#">Contact</a>
-        <a href="#">About</a>
+        <a href="about.html">About us</a>
       </nav>
-      <section class="header__buttons">
-        <button class="header__booking__btn"><a href="booking.html"><img src="../images/scroll.png">Booking</a></button>
-        <button class="header__search"><img src="../images/Vector.png"> </button>
-        <button class="header__login"><i class="far fa-user"></i></button>
+      <section class="header__nav">
+        <a href="booking.html" class="align active"><img src="../images/scroll.png">Booking</a>
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="far fa-user"></i></a>
       </section>
     </article>
   </header>
-  <main class="main__booking">
-    <img class="main__booking__img" src="../images/03-day.jpg">
-    <article class="hero booking__hero">
-      
-      <section class="booking__hero__content hero__content">
-        <p class="booking__hero__text hero__text">Lorem ipsum dolor sit amet, consectetur 
+
+  <!-- **MAIN** -->
+  <main class="main--booking">
+    <!-- Booking section -->  
+    <img class="main--booking__img" src="../images/03-day.jpg" alt="view at the evening">
+    <article class="booking-form">
+      <section class="booking-form__content">
+        <p class="booking-form__text">Lorem ipsum dolor sit amet, consectetur 
           adipiscing elit. Risus, nunc, habitant tortor eget in urna tempus risus. </p>
-        <h1 class="booking__hero__heading hero__heading">Booking</h1>
+        <h1 class="heading">Booking</h1>
         <form>
-          <input type="date" placeholder="Check in">
-          <input type="date" placeholder="Check out">
-          <input type="number" placeholder="Guests" value="2">
-          <input type="number" placeholder="Rooms" value="1">
-          <input type="button" value="Search">
+          <section class="input-group">
+            <label for="date-in">Check in</label>
+            <input type="date" id="date-in" value="2022-04-08">
+          </section>
+          <section class="input-group">
+            <label for="date-out">Check out</label>
+            <input type="date" id="date-out" value="2022-04-10">
+          </section>
+          <section class="input-group">
+            <label for="guest" class="input--small">Guests</label>
+            <input type="number" class="input--small" id="guest" value="2">
+          </section>
+          <section class="input-group">
+            <label for="room" class="input--small">Rooms</label>
+            <input type="number" class="input--small" id="room" value="1">
+          </section>
+            <a href="about.html#rooms"><input type="button" value="Search"></a>
         </form>
-        
-        </section>
- 
+      </section>
     </article>
   
-  
-    <article class="booking__cards cards">
+  <!-- Cards section -->
+    <article class="cards--booking cards">
       <section class="card card__rooms">
-        <img class="card__img card__rooms__img"  src="../images/02-night.jpg">
-        <h3 class="card__header">Our rooms</h3>
+        <img class="card__img card__rooms__img"  src="../images/02-night.jpg" alt="fireplace at night">
+        <h3 class="card__heading">Our rooms</h3>
         <p class="card__text">Lorem ipsum dolor sit amet, consectetur 
           adipiscing elit. Sollicitudin ultrices ac id dictum porta 
           mauris.</p>
+          <button class="hero__btn btn"><a href="about.html#rooms">Go to</a></button>
       </section>
-      <section class="card card__facilities">
-        <img class="card__img card__facilities__img" src="../images/spa.jpg">
-        <h3 class="card__header">Our facilities</h3>
+      <section class="card card__spa">
+        <img class="card__img card__spa__img" src="../images/spa.jpg" alt="wooden benches in the sauna">
+        <h3 class="card__heading">Our facilities</h3>
         <p class="card__text">Lorem ipsum dolor sit amet, consectetur 
           adipiscing elit. Sollicitudin ultrices ac id dictum porta 
           mauris.</p>
+        <button class="hero__btn btn"><a href="about.html#facilities">Go to</a></button>
       </section>
-
     </article>
   </main>
+
+  <!-- **FOOTER** -->
+  <!-- Footer for mobile -->
   <article class="footer--small">
-    <img src="../images/scroll.png">
+    <a href="../index.html"><img src="../images/scroll.png"></a>
     <i class="far fa-user"></i>
   </article>
+  <!-- Footer for desktop -->
   <footer>
     <section class="footer__icons">
       <i class="fab fa-spotify"></i>
@@ -82,12 +109,12 @@
       <a href="#">Sign in</a> 
       <a href="#">Help</a> 
       <a href="#">Available jobs</a> 
-      <a href="#">About</a> 
+      <a href="about.html">About</a> 
       <a href="#">Terms & conditions</a> 
       <a href="#">Partners</a> 
     </nav>
     <section class="footer__buttons">
-      <img src="../images/bonz.ai-logo-white-landscape.png">
+      <img src="../images/bonz.ai-logo-white-landscape.png" alt="Bonz.ai logo">
       <button class="footer__booking btn">Book your stay</button>
     </section>
   </footer>
