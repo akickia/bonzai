@@ -22,8 +22,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 52px;
-  line-height: 80px;
+  font-size: 3.25rem;
+  line-height: 5rem;
 }
 
 h2 {
@@ -32,15 +32,15 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  line-height: 57px;
+  line-height: 3.5rem;
 }
 
 p {
   margin: 2rem 0;
   font-family: 'Montserrat';
   font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 1.125rem;
   padding: 0 0.5rem;
   text-align: center;
 }
@@ -58,13 +58,13 @@ a {
   font-family: 'Jura';
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   text-align: center;
   color: #1F221E;
   background-color: #54E9BC;
   border-radius: 40px 0px;
-  padding: 18px 54px;
+  padding: 1.125rem 3.375rem;
   border: none
 }
 
@@ -134,12 +134,12 @@ header {
 }
 
 .header__logo {
-  width: 170px
+  width: 10.625rem;
 }
 
 /*HEADER - MOBILE */
 .header--small {
-  height: 100px;
+  height: 6.2rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -155,7 +155,7 @@ header {
 }
 
 .header--small img, .header--small i {
-  width: 70px;
+  width: 4.375rem;
   padding: 1rem;
   font-size: 2rem;
 }
@@ -171,14 +171,14 @@ header {
 
 .header__nav--small:hover {
   overflow: visible;
-  transform: translateY(350px);
+  transform: translateY(21.875rem);
   background-color: #54E9BC;
   margin: 0;
-  width: 250px;
+  width: 15.625rem;
 }
 
 .header__nav--small:hover a {
-  display: flex
+  display: flex;
 }
 
 /* --> HERO <-- */
@@ -187,7 +187,7 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   min-height: 100vh;
-  padding: 2rem
+  padding: 2rem;
 }
 
 .main--about .hero {
@@ -235,8 +235,8 @@ header {
 
 .card {
   background-color: #1f1f1f;
-  width: 380px;
-  height: 600px;
+  width: 23.75rem;
+  height: 37.5rem;
   margin: 3rem auto;
   display: flex;
   flex-direction: column;
@@ -246,9 +246,9 @@ header {
 }
 
 .card img {
-  margin-top: -93px;
-  width: 320px;
-  height: 320px;
+  margin-top: -5.813rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -283,7 +283,7 @@ header {
 }
 
 .card--room .card__images img {
-  max-width: 150px;
+  max-width: 9.375rem;
   height: unset;
   border-radius: 0;
   margin: 0.5rem
@@ -299,8 +299,8 @@ header {
 
 .card--room .card__text--large {
   font-family: 'Jura';
-  font-size: 36px;
-  line-height: 43px;
+  font-size: 2.25rem;
+  line-height: 2.688rem;
   text-align: center;
 }
 
@@ -310,7 +310,7 @@ header {
 }
 
 .booking-form__text {
-  max-width: 300px;
+  max-width: 18.75rem;
   margin: 2rem auto
 }
 
@@ -328,28 +328,28 @@ form .input-group {
 
 form label {
   display: none;
-  margin-left: 10px;
-  margin-bottom: -20px;
+  margin-left: 0.625rem;
+  margin-bottom: -1.25rem;
   background-color: #ffffff;
   color: #1f1f1f;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   border: none;
-  width: 400px;
+  width: 25rem;
   text-align: start;
   padding: 0.5rem 1rem 0rem 1rem
 }
 
 form input {
-  width: 312px;
+  width: 19.5rem;
   border-radius: 20px 0px;
-  margin: 20px auto;
+  margin: 1.25rem auto;
   padding: 1rem;
   font-family: 'Jura';
-  font-size: 24px;
+  font-size: 1.5rem;
   border: none;
   outline: none;
 }
@@ -362,7 +362,7 @@ form input[type="button"] {
 footer {
   display: none;
   background-color: #1f1f1f;
-  grid-template-rows: 100px;
+  grid-template-rows: 6.25rem;
 }
 
 .footer__icons, .footer__nav, .footer__buttons {
@@ -400,7 +400,7 @@ footer {
 }
 
 footer img {
-  width: 84px;
+  width: 5.25rem;
 }
 
 /*FOOTER - MOBILE*/
@@ -410,7 +410,7 @@ footer img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 30px;
+  font-size: 1.875rem;
   padding: 2rem 3rem;
   margin-bottom: 0;
 }
@@ -432,7 +432,7 @@ footer img {
   header, main, footer {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    gap: 20px
+    gap: 1.25rem
   }
 
   .hero,  .cards, .facilities, .rooms {
@@ -440,8 +440,8 @@ footer img {
   }
 
   h1 {
-    font-size: 96px;
-    line-height: 114px;
+    font-size: 6rem;
+    line-height: 7.125rem;
   }
   
   /* --> HEADER <-- */
@@ -452,12 +452,12 @@ footer img {
   }
   
   .header--about {
-    min-height: 600px;
+    min-height: 37.5rem;
     background-image: url(../images/bg-about.jpg);
   }
   
   .header--booking {
-    min-height: 400px;
+    min-height: 25rem;
     background-image: 
       linear-gradient(180.28deg, #24242E 11.76%, rgba(36, 36, 46, 0) 89.34%), 
       url(../images/bg-book.jpg);
@@ -504,16 +504,16 @@ footer img {
   }
 
   form input:not([type="button"]) {
-    font-size: 26px;
-    line-height: 31px;
-    width: 400px;
-    margin: 20px 10px;
+    font-size: 1.625rem;
+    line-height: 1.938rem;
+    width: 25rem;
+    margin: 1.25rem 0.625rem;
     border-radius: 0;
     padding: 0.5rem 1rem 0rem 1rem
   }
 
   form .input--small {
-    max-width: 100px;
+    max-width: 6.25rem;
   }
   
   form a {
@@ -592,7 +592,7 @@ footer img {
 
   /* --> HERO <-- */
   .main--about .hero {
-    padding: 1rem 200px 3rem 200px
+    padding: 1rem 12.5rem 3rem 12.5rem
   }
 
   /* --> BOOKING FORM <-- */
@@ -601,8 +601,8 @@ footer img {
   }
 
   form label, form input:not([type="button"]) {
-    font-size: 18px;
-    width: 220px;
+    font-size: 1.125rem;
+    width: 13.75rem;
   }
 
   /* --> CARDS <-- */
@@ -613,7 +613,7 @@ footer img {
 
   /* --> FOOTER <-- */
   footer {
-    grid-template-rows: 200px;
+    grid-template-rows: 12.5rem;
   }
 
   .footer__icons {
@@ -622,12 +622,12 @@ footer img {
 
   .footer__icons i {
     margin: 0.5rem;
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .footer__nav {
     grid-column: 3 / 7;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .footer__nav a {
@@ -635,7 +635,7 @@ footer img {
   }
   
   .footer__buttons button {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .footer__buttons {
@@ -650,8 +650,8 @@ footer img {
 
   .main--booking__img {
     display: block;
-    width: 320px;
-    height: 320px;
+    width: 20rem;
+    height: 20rem;
     grid-column: 7 / span 4;
     margin: auto;
     border-radius: 50%;
