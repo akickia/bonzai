@@ -258,7 +258,7 @@ header {
 }
 
  /*CARDS - ROOM*/
-.rooms .card-room {
+.rooms .card--room {
   width: 100%;
   height: unset;
   text-align: start;
@@ -268,36 +268,36 @@ header {
   padding: 1%;
 }
 
-.card-room .room__img--large {
+.card--room .card__img--large {
   width: unset;
   height: unset;
   border-radius: 40px 0 0 40px;
   margin-top: 0;
 }
 
-.card-room .small__images {
+.card--room .card__images {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.card-room .small__images img {
+.card--room .card__images img {
   max-width: 150px;
   height: unset;
   border-radius: 0;
   margin: 0.5rem
 }
 
-.card-room .small__images img:first-child{
+.card--room .card__images img:first-child{
   border-radius: 40px 0 0 40px;
 }
 
-.card-room .small__images img:last-child{
+.card--room .card__images img:last-child{
   border-radius: 0 40px 40px 0;
 }
 
-.card-room .card__text--large {
+.card--room .card__text--large {
   font-family: 'Jura';
   font-size: 36px;
   line-height: 43px;
@@ -419,6 +419,7 @@ footer img {
   transform: rotateY(180deg);
 }
 
+/* ..... MEDIA QUARIES ..... */
 @media screen and (min-width: 700px) {
   /*HIDDEN*/
   .header--small, .booking-form__text, 
@@ -526,48 +527,48 @@ footer img {
   }
 
   /*CARDS - ROOM*/
-  .rooms .card-room {
+  .rooms .card--room {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 20% 40% 20% 20%;
   }
   
-  .card-room .room__img--large {
+  .card--room .card__img--large {
     grid-column: 1 / 3;
     grid-row: 1 / 4;
     transform: translateX(-10%);
   }
 
-  .card-room .small__images {
+  .card--room .card__images {
     grid-column: 1 / 3;
     grid-row: 4 / 5;
     flex-direction: row;
     transform: translateX(-10%);
   }
 
-  .card-room .card__heading {
+  .card--room .card__heading {
     grid-column: 3 / span 2;
     grid-row: 1;
     text-align: start;
   }
   
-  .card-room .card__text {
+  .card--room .card__text {
     grid-column: span 2;
     text-align: start;
   }
   
-  .card-room .card__text--small {
+  .card--room .card__text--small {
     grid-column: 3 / span 1;
     grid-row: 3 / span 2;
     text-align: start;
   }
   
-  .card-room .card__text--large {
+  .card--room .card__text--large {
     grid-column: 4 / span 1;
     grid-row: 3;
   }
   
-  .card-room .btn {
+  .card--room .btn {
     grid-column: 4 / span 1;
     grid-row: 4;
     padding: 0.5rem 2rem;
@@ -606,7 +607,7 @@ footer img {
 
   /* --> CARDS <-- */
   /*CARDS - ROOM*/
-  .card-room .card__text--small {
+  .card--room .card__text--small {
     line-height: 1.5rem;
   }
 
